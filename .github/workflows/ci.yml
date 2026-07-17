@@ -1,0 +1,8 @@
+name: say hello
+on: push
+jobs:
+  greet:
+    runs-on: ubuntu-lastest
+    steps:
+      -run:echo "hello,actions!"
+
