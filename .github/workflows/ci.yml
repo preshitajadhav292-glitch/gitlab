@@ -5,4 +5,10 @@ jobs:
     runs-on: ubuntu-lastest
     steps:
       -run:echo "hello,actions!"
+steps:
+  - uses: actions/checkout@v4
+  - name: Show the commit
+    run: echo "Commit: $GITHUB_SHA"
+  - name: List the files
+    run: ls -la
 
